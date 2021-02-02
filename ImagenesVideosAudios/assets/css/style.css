@@ -1,0 +1,175 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: white;
+    font-family: 'Nerko One', cursive;
+    color: rgb(66, 66, 66);
+    width: 100%;
+    height: 100%;
+}
+header{
+    background-color: white;
+    border-bottom: 1px solid rgb(233, 202, 155); 
+    padding: 40px;
+    width: 100%;
+    height: 200px;
+}
+header img{
+    width: 135px;
+}
+h1, h3{
+    display: inline-block;
+}
+#titulo{font-size: 20px;
+    float: left;
+    padding: 20px 20px 20px 0px;
+    width: 30%;
+}
+#logo{
+    float: left;
+}
+
+
+main{
+    text-align: center;
+    width: 100%;
+    
+}
+article img{
+    border-radius: 10px;
+    height: 200px;
+    width: 300px;
+}
+article{
+    margin: 20px auto;
+    padding: 12px;
+   display: inline-block;
+}
+
+footer{
+    
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid rgb(66, 66, 66);;
+  
+}
+footer img{
+    width: 100px;
+    animation: latir infinite 2s linear;
+}
+@keyframes latir{
+    0%{
+        transform: scale(1, 1);
+    }
+    25%{
+        transform: scale(1.05, 1.05);
+    }
+    50%{
+        transform: scale(1, 1);
+    }
+    75%{
+        transform: scale(0.95, 0.95);
+    }
+    100%{
+    transform: scale(1, 1);
+    }
+}
+
+section{
+    display: inline-block;
+
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(66, 66, 66);
+}
+.clearBox{
+    clear: both;
+}
+
+button{
+    padding: 3px;
+    border-radius: 10px;
+    
+}
+button:hover{
+    color: #0c8033;
+    border-color: rgb(233, 202, 155);
+}
+article img:hover{
+    border:4px solid rgb(66, 66, 66);
+    
+
+}
+
+/*Unicamente afectan al index*/
+#indexImgCont{
+    text-align: center;
+    width: 100%;
+    height: 600px;
+    background-image: url("../img/dogue-de-bordeaux-fondo-letras.jpg") ;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+#menu{
+    margin-top: 50px;
+    float: right;
+    width: 40%;
+    text-align:right ;
+    font-size: 20px;
+    
+}
+#menu ul{
+    line-height: 85px;
+  
+}
+#menu ul li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 15px;
+    margin-right: 15px;
+    
+}
+#menu a{
+    border-radius: 30px;
+    padding: 10px;
+    text-decoration:none;
+    transition: 300ms all;
+
+}
+#menu a:hover{
+    background-color: rgba(66, 66, 66) ;
+    color: white;
+    
+
+}
+
+/*Sólo afecta a la pagina de audios*/
+#sonidos{
+    width: 100%;
+}
+.sonido{
+    display: inline-block;
+}
+
+/*reproductor propio*/
+.videoLobos { 
+    display: none;
+}
+#fotoLobos{
+    width: 720px;
+    
+}
+#videoControls{
+    display: none;
+}
+

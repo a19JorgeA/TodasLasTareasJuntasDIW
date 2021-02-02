@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="JSVideo.js"></script>
+    <title>Tarea imagenes</title>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html">
+                <img src="../assets/img/logoDog.png" alt="logoPerros">
+            </a>
+        </div>
+        <div id="titulo">
+            <h1>Mundo Perruno</h1><br>
+            <small>El mejor amigo del hombre</small>
+        </div>
+    </header>
+    <div class="clearBox"></div>
+    <main>
+        <a id="volver" href="JSVideo.html">
+            <h2>« VOLVER</h2>
+        </a>
+        <h2>REPRODUCTOR PROPIO CON JAVASCRIPT</h2>
+        <div id="video_container">
+            <div id="botones">
+                <button id="btnmp4" onclick="mp4()">MP4</button>
+                <button id="btnogg" onclick="ogg()">OGG</button>
+                <button id="btnwebm" onclick="webm()">WEBM</button>
+            </div>
+            <br>
+            <img id="fotoLobos" src="../assets/img/wolf-2984865_1920.jpg" alt="lobos">
+            <video width="1280" height="720" name="videoLobos" class="videoLobos" id="webm" loop>
+                <source src="../assets/videos/evanescence.webm" type="video/webm">
+                Your browser does not support the video tag.
+            </video>
+            <video width="1280" height="720" name="videoLobos" class="videoLobos" id="mp4" loop>
+                <source src="../assets/videos/evanescence.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video width="1280" height="720" name="videoLobos" class="videoLobos" id="ogg" loop>
+                <source src="../assets/videos/evanescence.ogv" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
+            <br>
+            <div id="videoControls">
+                <button onclick="rewindv()" type="button"><i style="font-size:24px" class="fa">&#xf04a;</i></button>
+                <button onclick="pausav()" type="button"><i style="font-size:24px" class="fa">&#xf04c;</i></button>
+                <button onclick="playv()" type="button"><i style="font-size:24px" class="fa">&#xf04b;</i></button>
+                <button onclick="stopv()" type="button"><i style="font-size:24px" class="fa">&#xf04d;</i></button>
+                <button onclick="forwardv()" type="button"><i style="font-size:24px" class="fa">&#xf04e;</i></button>
+                <button onclick="volumenosv()" type="button">🔉-</button>
+                <button onclick="mutev()" type="button">🔇</button>
+                <button onclick="volumasv()" type="button">🔊+</button>
+            </div>
+        </div>
+    </main>
+    <div class="clearBox"></div>
+    <footer>
+        <a href="https://refuxio.gal/" target="_blank">
+            <img src="../assets/img/bull-terrier-2340739_640.png" alt="ayuda canina"><br>
+            <small>Ayuda y colabora</small>
+        </a>
+    </footer>
+
+</body>
+
+</html>
