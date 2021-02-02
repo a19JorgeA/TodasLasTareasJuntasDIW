@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+ html, body{
+    text-shadow: 2px 2px  white;
+   width: 100%;
+   height: 100%;
+    background-image: url("cultivo.jpg");
+    text-align: center;
+  }
+  h1{
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      text-shadow: 2px 2px  white;
+      color: black;
+  }
+ 
+  #container1{
+      width: 100%;
+      height: 100%;
+    
+  }
+  #container-comida{
+      width: 100%;
+      height: 60%;
+      background-color: rgba(255, 255, 255, 0.493);
+  }
+  #container-verdura{
+      
+    border: 4px solid white;
+    border-style: inset ;
+    float: left;
+    width: 33.33%;
+    height: 100%;
+    
+  }
+  #container-fruta{
+    border: 4px solid white;
+    border-style: inset ;
+    float: left;
+    width: 33.33%;
+    height: 100%;
+    
+  }
+  #container-carnes{
+    border: 4px solid white;
+    border-style: inset ;
+    float: left;
+    width: 33.33%;
+    height: 100%;
+    
+  }
+  #container-imagenes{
+    clear: both;
+    width: 100%;
+    height: 40%;
+   
+  }
+  img{
+      width: 120px;
+      height: 75px;
+  }
